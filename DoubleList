@@ -111,6 +111,20 @@ public class DoubleList {
                 return temp_data;
             }
         }
+    } 
+    public void addBefore(DoubleNode n, Object o){
+        if (n == head){
+            addFirst(o);
+        }
+        else {
+            DoubleNode m = new DoubleNode(o);
+            DoubleNode anterior = n.getPrev();
+            anterior.setNext(m);
+            m.setPrev(anterior);
+            m.setNext(n);
+            n.setPrev(m);
+            size++;
+        }
     }
     public void addAfter(DoubleNode n, Object a){
         if (n !=tail){
