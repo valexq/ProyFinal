@@ -21,10 +21,10 @@ public class User {
     
     public User() {
         this.nombre = null;
-        this.id = null;
+        this.id = 0;
         this.fecha_nac = null;
         this.ciudad_nac = null;
-        this.tel = null;
+        this.tel = 0;
         this.email = null;
         this.dir = null;
     }

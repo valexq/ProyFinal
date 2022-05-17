@@ -1,9 +1,8 @@
-public Principal{
+public class Principal {
     public static void main(String[] args) {
-        Empleados();
-        
+        empleados();
     }
-    private void Empleados(){
+    private static void empleados(){
         User e1 = new User();
         e1.setNombre("Carolina");
         e1.setId(1007061);
@@ -55,5 +54,7 @@ public Principal{
         empleados.addFirst(e3);
         empleados.addFirst(e4);
         empleados.addFirst(e5);
+        empleados.printList();
+
     }
 }

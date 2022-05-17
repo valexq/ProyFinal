@@ -1,13 +1,13 @@
-public Password{
+public class Password{
     private String password;
-    private Char descrip;
+    private char descrip;
     private User usu;  
     public Password(){
         usu = null; 
         password = null; 
-        descrip = null; 
+        descrip = ' '; 
     }
-    public Password(User u, String c, Char d){
+    public Password(User u, String c, char d){
         usu = u; 
         password = c; 
         descrip = d; 
@@ -18,7 +18,7 @@ public Password{
     public String getPassword(){
         return password; 
     }
-    public Char getDescrip(){
+    public char getDescrip(){
         return descrip; 
     }
     public void setUsu(User u){
@@ -27,7 +27,7 @@ public Password{
     public void setPassword(String c){
         password = c;
     }
-    public void setDescrip(Char d){
+    public void setDescrip(char d){
         descrip = d;
     }
     @Override
